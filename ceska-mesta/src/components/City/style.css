@@ -1,0 +1,33 @@
+.city {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.city img {
+  margin-right: 1rem;
+}
+
+.city__title {
+  grid-column: 1/-1;
+}
+
+@media screen and (min-width: 600px) {
+  .cityes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .city {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cityes {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
