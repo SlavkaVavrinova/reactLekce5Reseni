@@ -106,7 +106,15 @@ const App = () => {
   return (
     <div className="cityes">
       {cities.map((city) => (
-        <City {...city} key={city.name} />
+        <City
+          key={city.name}
+          name={city.name}
+          photo={city.photo}
+          population={city.population}
+          area={city.area}
+          district={city.district}
+        />
+        // Kratší zápis spread operátor: <City {...city} key={city.name} />
       ))}
     </div>
   );
